@@ -13,8 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require bootstrap-sass/assets/javascripts/bootstrap-sprockets
+//= require bootstrap-sprockets
 //= require bootstrap-material-design
 //= require_tree .
 
-$.material.init();
+$(document).ready(function() {
+  $.material.init();
+});

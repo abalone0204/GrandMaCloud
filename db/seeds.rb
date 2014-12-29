@@ -5,3 +5,20 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+grandmom_name_arr = ["金美滿", "安潔莉納裘莉", "青稞掃", "陳樹菊", "陳菊", "張慧嬤"]
+if Grandmom.all.blank?
+  grandmom_name_arr.each do |name|
+    Grandmom.create(name: name)
+  end  
+end
+
+skill_arr = ["心情", "閒聊", "知識", "講古"]
+if Skill.all.blank?
+  skill_arr.each do |skill|
+    Skill.create(name: skill)
+  end  
+end
+
+Skill.all.each do |s|
+  s.update_attribute(:grandmom_id, Grandmom.all.sample.id)
+end
