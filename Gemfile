@@ -38,3 +38,10 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'bootstrap-sass', '~> 3.2.0'
+gem "font-awesome-rails"
+gem 'bootstrap-material-design'
+group :development do
+  gem 'pry-rails'
+  gem 'better_errors'
+end
