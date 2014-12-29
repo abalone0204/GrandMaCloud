@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'skills/index'
+
+  get 'skills/show'
+
+  get 'skills/phone_call'
+
   get 'grandmoms/index'
 
   get 'grandmoms/show'
