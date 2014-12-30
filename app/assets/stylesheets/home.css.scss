@@ -1,9 +1,13 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.home-body{
+  background-image: url('https://ed038d6765bee7fe127f73ed53bc6f6e8900d73d.googledrive.com/host/0B_8CuuG9OgYzTElFeVRWaVd4TDg/home-cloud-2.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .home{
   margin-top: 10%;
-  background-image: url('https://ed038d6765bee7fe127f73ed53bc6f6e8900d73d.googledrive.com/host/0B_8CuuG9OgYzTElFeVRWaVd4TDg/home-cloud.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 20 5;
