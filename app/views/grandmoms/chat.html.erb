@@ -1,7 +1,9 @@
-<div class="col-md-8 col-md-offset-2">
+<div class="input-container col-md-4">
+  <input type='text' id='nameInput' placeholder='Name' value="Denny" class="form-control" disabled="disabled">
+  <input type='text' id='messageInput' placeholder='Message' class="form-control floating-label">
+  </div>
+<div class="col-md-8 user-chat">
   <h1>Chat</h1>
   <div id='messagesDiv' class="well chat-room"></div>
-  <input type='text' id='nameInput' placeholder='Name'>
-  <input type='text' id='messageInput' placeholder='Message'>
 </div>
 <%= javascript_include_tag 'pages/chat.js', :cache => true %>
