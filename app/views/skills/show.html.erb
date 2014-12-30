@@ -1,8 +1,9 @@
-<div class="col-xs-offset-2 col-xs-10 ">
-  <h1>Grandma master at <%= @skill.name %> now is available</h1>
-  <p>
+<div class="col-xs-offset-2 col-xs-10 skill-show">  
+  <header>
+    <h1>Grandma master at <%= @skill.name %> now is available</h1>
+    <p>
     <%= @gm.name %>
-  </p>
-
+    </p>
+  </header>
   <%= link_to "Call", skills_phone_call_path , class: "btn btn-info"%>
 </div>
