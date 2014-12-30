@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grandma</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+</head>
+<body class="container home-body">
+      
+<div class="page row">
+  <%= yield %>
+</div>
+<script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
+</body>
+</html>
