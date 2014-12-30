@@ -5,10 +5,16 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-grandmom_name_arr = ["金美滿", "安潔莉納裘莉", "青稞掃", "陳樹菊", "陳菊", "張慧嬤"]
+grandmom_name_hash = {:"金美滿" =>"https://ed038d6765bee7fe127f73ed53bc6f6e8900d73d.googledrive.com/host/0B_8CuuG9OgYzTElFeVRWaVd4TDg/ama1.jpg", 
+                      :"安潔莉納裘莉"=>"https://ed038d6765bee7fe127f73ed53bc6f6e8900d73d.googledrive.com/host/0B_8CuuG9OgYzTElFeVRWaVd4TDg/ama2.jpg", 
+                      :"超級阿嬤" =>"https://ed038d6765bee7fe127f73ed53bc6f6e8900d73d.googledrive.com/host/0B_8CuuG9OgYzTElFeVRWaVd4TDg/ama3", 
+                      :"陳樹菊" => "https://ed038d6765bee7fe127f73ed53bc6f6e8900d73d.googledrive.com/host/0B_8CuuG9OgYzTElFeVRWaVd4TDg/%E9%98%BF%E7%BD%B5%E9%AB%94%E6%93%8D.jpg", 
+                      :"陳菊" => "https://ed038d6765bee7fe127f73ed53bc6f6e8900d73d.googledrive.com/host/0B_8CuuG9OgYzTElFeVRWaVd4TDg/ama4.jpg", 
+                      :"法律蓮夢露" => "https://ed038d6765bee7fe127f73ed53bc6f6e8900d73d.googledrive.com/host/0B_8CuuG9OgYzTElFeVRWaVd4TDg/ama5.jpg"}
+
 if Grandmom.all.blank?
-  grandmom_name_arr.each do |name|
-    Grandmom.create(name: name)
+  grandmom_name_hash.each do |key, value|
+    Grandmom.create(name: key, avatar: value)
   end  
 end
 
