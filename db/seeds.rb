@@ -19,6 +19,10 @@ if Skill.all.blank?
   end  
 end
 
-Skill.all.each do |s|
-  s.update_attribute(:grandmom_id, Grandmom.all.sample.id)
+if Grandmom.any? && Skill.any?
+  Grandmom.all.each do |gm|
+    Skill.all.sample(2).each do|sk|
+      gm.grandships.create(skill_id: sk.id)
+    end
+  end
 end

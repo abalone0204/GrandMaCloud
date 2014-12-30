@@ -6,11 +6,7 @@ class SkillsController < ApplicationController
   end
 
   def show
-    @gm = @skill.grandmom
-  end
-
-  def phone_call
-
+    @gm = @skill.grandmoms.sample
   end
 
   private 

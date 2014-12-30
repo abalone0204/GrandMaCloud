@@ -4,4 +4,12 @@ class GrandmomsController < ApplicationController
 
   def show
   end
+
+  def phone_call
+
+  end
+
+  def chat
+    
+  end
 end

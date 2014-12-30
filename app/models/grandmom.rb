@@ -1,4 +1,4 @@
 class Grandmom < ActiveRecord::Base
-  # has_many :grandships
-  has_many :skills
+  has_many :grandships, :dependent => :destroy
+  has_many :skills, through: :grandships
 end

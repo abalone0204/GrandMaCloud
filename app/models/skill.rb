@@ -1,4 +1,4 @@
 class Skill < ActiveRecord::Base
-  # has_many :grandships
-  belongs_to :grandmom
+  has_many :grandships, :dependent => :destroy
+  has_many :grandmoms, through: :grandships
 end

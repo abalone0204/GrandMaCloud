@@ -18,7 +18,14 @@ Rails.application.routes.draw do
   root 'home#index'
 
   resources :grandmoms
-  resources :skills
+  resources :skills do
+    resources :grandmoms do
+      member do
+        get :phone_call
+        get :chat
+      end
+    end
+  end
   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
