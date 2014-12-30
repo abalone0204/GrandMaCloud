@@ -2,8 +2,8 @@
   <h1>Chat</h1>
   <div id='messagesDiv' class="well chat-room"></div>
   <hr>
-  <input type='text' id='nameInput' placeholder='Name' value="阿嬤" disabled="disabled">
-  <input type='text' id='messageInput' placeholder='Message' >
-  <button id='messageSend' class="btn btn-default">Send</button>
+  <input type='text' id='nameInput'  class="form-control floating-label" placeholder='Name' value="阿嬤" disabled="disabled">
+  <input type='text' id='messageInput' placeholder='Message' class="form-control floating-label">
+  <button id='messageSend' class="btn btn-lg btn-default">Send</button>
 </div>
 <%= javascript_include_tag 'pages/chat.js', :cache => true %>
