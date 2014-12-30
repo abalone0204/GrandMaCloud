@@ -12,6 +12,16 @@ $(document).ready(function() {
       $('#messageInput').val('');
     }
   });
+  $('#messageSend').on('click', function() {
+    var name = $('#nameInput').val();
+    var text = $('#messageInput').val();
+    // myDataRef.set('User ' + name + ' says ' + text);
+    myDataRef.push({
+      name: name,
+      text: text
+    });
+    $('#messageInput').val('');
+  });
   myDataRef.on('child_added', function(snapshot) {
     console.log("The message is:");
     var message = snapshot.val();
