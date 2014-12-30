@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'grandmoms/show'
 
   get 'home/index'
+  get 'home/chat_room'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

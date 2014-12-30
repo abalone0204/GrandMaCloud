@@ -3,4 +3,7 @@ class HomeController < ApplicationController
     @skills = Skill.all
     @grandmoms = Grandmom.all
   end
+  def chat_room
+    
+  end
 end
