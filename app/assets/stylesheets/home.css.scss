@@ -17,4 +17,11 @@
   a{
     color: black !important;
   }
+  .btn{
+    font-size: 3rem;
+    &:hover{
+      background: white;
+    }
+  }
+
 }
