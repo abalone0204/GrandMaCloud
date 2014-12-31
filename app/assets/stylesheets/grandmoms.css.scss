@@ -1,21 +1,39 @@
 // Place all the styles related to the grandmoms controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.calling, .input-container{
-  margin-top: 10%;
+.calling, .input-container {
+    margin-top: 10%;
 }
 
-#messageInput{
-  margin-top: 20px;
-} 
-.user-chat{
-  input{
-
-    font-size: 2rem;
-  }
+#messageInput {
+    margin-top: 20px;
 }
 
-#messagesDiv{
-  font-size: 5rem;
+.user-chat {
+    input {
+        font-size: 2rem;
+    }
 }
 
+#messagesDiv {
+    font-size: 5rem;
+    max-height: 80vh;
+    overflow: auto;
+    margin-top: 20px;
+}
+
+.input-container {
+    position: fixed;
+}
+
+.judge {
+    .star-judge {
+        font-size: 3rem;
+        i{
+          cursor: pointer;
+        }
+    }
+    .fa-star{
+      color: yellow !important;
+    }
+}
