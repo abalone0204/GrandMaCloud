@@ -3,11 +3,18 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .home-body{
   background-image: url('https://ed038d6765bee7fe127f73ed53bc6f6e8900d73d.googledrive.com/host/0B_8CuuG9OgYzTElFeVRWaVd4TDg/home-cloud-2.jpg');
-  background-size: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
+  width: 100vw;
 }
 .home{
-  margin-top: 10%;
+  h1{
+    font-size: 6rem;
+  }
+  margin-top: 2%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 20 5;
@@ -27,5 +34,16 @@
       background: white;
     }
   }
+  img{
+    &:hover{
+      -o-transition: background .20s linear;
+      -webkit-transition: background .20s linear;
+      -moz-transition: background .20s linear;
+      transition:  background .20s linear;
+      background: white;
+      box-shadow:2px 2px 2px rgba(20%,20%,40%,0.6),4px 4px 6px rgba(20%,20%,40%,0.4),6px 6px 12px rgba(20%,20%,40%,0.4);
+      cursor: pointer;
+    }
 
+  }
 }
