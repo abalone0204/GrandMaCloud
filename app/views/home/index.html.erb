@@ -1,12 +1,14 @@
 <div class="col-md-offset-2 col-md-6 home">
   <header>
-
-  <h1>歡迎來到阿嬤雲</h1>
-  <p>你今天想聊什麼呢？</p>
-  <% @skills.each do |skill| %>
+    <h1>歡迎來到阿嬤雲</h1>
+    <%= image_tag "https://ed038d6765bee7fe127f73ed53bc6f6e8900d73d.googledrive.com/host/0B_8CuuG9OgYzTElFeVRWaVd4TDg/ama-logo.png" %>
+    
+    <p>你今天想聊什麼呢？</p>
+    <% @skills.each do |skill| %>
     <%= link_to skill.name, skill, class: "btn btn-default"%>
-  <% end %>
+    <% end %>
   </header>
   <%= fa_icon "phone" %>
-  <%= link_to "我就是阿嬤", chat_room_path, clas: "btn btn-info" %>
+  
 </div>
+<%= link_to "我就是阿嬤", chat_room_path, clas: "btn btn-info" %>

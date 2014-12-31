@@ -24,6 +24,8 @@ Rails.application.routes.draw do
       member do
         get :phone_call
         get :chat
+        get :judge
+        get :complete
       end
     end
   end

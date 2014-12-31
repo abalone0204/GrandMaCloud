@@ -1,0 +1,20 @@
+<div class="judge col-md-6 col-md-offset-2">
+  <h2>請給<%= @gm.name %>的表現打個分數吧！</h2>
+  <div class="star-judge">
+    <input type="hidden" value="0" class="rate-val">
+    <div class="rating">
+      <% 5.times do |i|%>
+        <%= fa_icon "star-o", data: {rate: i+1} %>
+      <% end %>
+    </div>
+  </div>
+  <div class="group">
+    <label for="comment">其他建議</label>
+    <input type="textarea" class="form-control" name="comment">
+  </div>
+  <%= link_to complete_skill_grandmom_path(@skill, @gm), class: "btn btn-success btn-complete" do %>
+  <%= fa_icon "check" %> 完成
+  <% end %>
+</div>
+
+<%= javascript_include_tag 'pages/judge' %>

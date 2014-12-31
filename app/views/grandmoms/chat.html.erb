@@ -7,9 +7,10 @@
   </div> 
   <input type='text' id='nameInput' placeholder='Name' value="Denny" class="form-control" disabled="disabled">
   <input type='text' id='messageInput' placeholder='Message' class="form-control floating-label">
+  <%= link_to "結束通話", judge_skill_grandmom_path(@skill, @gm), class: "btn btn-default btn-end" %>
   </div>
 <div class="col-md-8 user-chat">
-  <h1>Chat</h1>
+  <h1><%= @gm.name %> <span class="label label-success">LIVE</span></h1>
   <div id='messagesDiv' class="well chat-room"></div>
 </div>
 <%= javascript_include_tag 'pages/chat.js', :cache => true %>
